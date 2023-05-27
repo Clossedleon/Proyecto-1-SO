@@ -41,6 +41,55 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        NAcceBugatti = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        NMaserati = new javax.swing.JLabel();
+        NAcceMaserati = new javax.swing.JLabel();
+        NCarroBugatti = new javax.swing.JLabel();
+        NMotorBugatti = new javax.swing.JLabel();
+        NRuedasBugatti = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        NBugatti = new javax.swing.JLabel();
+        NChasisBugatti1 = new javax.swing.JLabel();
+        NChasisMaserati = new javax.swing.JLabel();
+        NCarroMaserati = new javax.swing.JLabel();
+        NMotorMaserati = new javax.swing.JLabel();
+        NRuedasMaserati = new javax.swing.JLabel();
+        Start = new javax.swing.JButton();
+        Stop = new javax.swing.JButton();
+        Play = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
 
@@ -49,10 +98,172 @@ public class Menu extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/BugattiLogo.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 240, 120));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 240, 120));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/MaseratiLogo.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 10, -1, 160));
+
+        jLabel1.setText("Bugatti");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
+
+        jLabel2.setText("Maserati");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
+
+        jLabel5.setText("Numero de trabajadores:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 140, -1));
+
+        NAcceBugatti.setText("15");
+        jPanel1.add(NAcceBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 20, -1));
+
+        jLabel7.setText("Creadores de accesorios:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 140, -1));
+
+        jLabel8.setText("Numero de trabajadores:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 140, -1));
+
+        jLabel9.setText("Creadores de chasis:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 140, -1));
+
+        jLabel10.setText("Creador de carrocería:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 140, -1));
+
+        jLabel11.setText("Creadores de motor: ");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, 140, -1));
+
+        jLabel12.setText("Creadores de ruedas:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 140, -1));
+
+        NMaserati.setText("X");
+        jPanel1.add(NMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 20, -1));
+
+        NAcceMaserati.setText("15");
+        jPanel1.add(NAcceMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 20, -1));
+
+        NCarroBugatti.setText("15");
+        jPanel1.add(NCarroBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 20, -1));
+
+        NMotorBugatti.setText("15");
+        jPanel1.add(NMotorBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 20, -1));
+
+        NRuedasBugatti.setText("15");
+        jPanel1.add(NRuedasBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 20, -1));
+
+        jLabel18.setText("Creadores de chasis:");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 140, -1));
+
+        jLabel19.setText("Creador de carrocería:");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 140, -1));
+
+        jLabel20.setText("Creadores de motor: ");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 140, -1));
+
+        jLabel21.setText("Creadores de ruedas:");
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 140, -1));
+
+        jLabel22.setText("Creadores de accesorios:");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 140, -1));
+
+        NBugatti.setText("15");
+        jPanel1.add(NBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 20, -1));
+
+        NChasisBugatti1.setText("15");
+        jPanel1.add(NChasisBugatti1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 20, -1));
+
+        NChasisMaserati.setText("15");
+        jPanel1.add(NChasisMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 240, 20, -1));
+
+        NCarroMaserati.setText("15");
+        jPanel1.add(NCarroMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 20, -1));
+
+        NMotorMaserati.setText("15");
+        jPanel1.add(NMotorMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 20, -1));
+
+        NRuedasMaserati.setText("15");
+        jPanel1.add(NRuedasMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 20, -1));
+
+        Start.setText("Comenzar Simulación");
+        Start.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StartActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Start, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, 170, 50));
+
+        Stop.setText("Parar");
+        Stop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StopActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Stop, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 430, -1, -1));
+
+        Play.setText("Reanudar");
+        Play.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlayActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Play, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, -1, -1));
+
+        jButton1.setText("jButton1");
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 30, 10));
+
+        jButton2.setText("jButton1");
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 30, 10));
+
+        jButton3.setText("jButton1");
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 30, 10));
+
+        jButton4.setText("jButton1");
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 30, 10));
+
+        jButton5.setText("jButton1");
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 30, 10));
+
+        jButton6.setText("jButton1");
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 30, 10));
+
+        jButton7.setText("jButton1");
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 10));
+
+        jButton8.setText("jButton1");
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 30, 10));
+
+        jButton9.setText("jButton1");
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, 30, 10));
+
+        jButton10.setText("jButton1");
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 30, 10));
+
+        jButton11.setText("jButton1");
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 30, 10));
+
+        jButton12.setText("jButton1");
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 240, 30, 10));
+
+        jButton13.setText("jButton1");
+        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 250, 30, 10));
+
+        jButton14.setText("jButton1");
+        jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 30, 10));
+
+        jButton15.setText("jButton1");
+        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 30, 10));
+
+        jButton16.setText("jButton1");
+        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 30, 10));
+
+        jButton17.setText("jButton1");
+        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 310, 30, 10));
+
+        jButton18.setText("jButton1");
+        jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, 30, 10));
+
+        jButton19.setText("jButton1");
+        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, 30, 10));
+
+        jButton20.setText("jButton1");
+        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 30, 10));
 
         jTabbedPane1.addTab("Configuración", jPanel1);
 
@@ -75,6 +286,18 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_StartActionPerformed
+
+    private void StopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StopActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_StopActionPerformed
+
+    private void PlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PlayActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,8 +335,57 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel NAcceBugatti;
+    private javax.swing.JLabel NAcceMaserati;
+    private javax.swing.JLabel NBugatti;
+    private javax.swing.JLabel NCarroBugatti;
+    private javax.swing.JLabel NCarroMaserati;
+    private javax.swing.JLabel NChasisBugatti1;
+    private javax.swing.JLabel NChasisMaserati;
+    private javax.swing.JLabel NMaserati;
+    private javax.swing.JLabel NMotorBugatti;
+    private javax.swing.JLabel NMotorMaserati;
+    private javax.swing.JLabel NRuedasBugatti;
+    private javax.swing.JLabel NRuedasMaserati;
+    private javax.swing.JButton Play;
+    private javax.swing.JButton Start;
+    private javax.swing.JButton Stop;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
