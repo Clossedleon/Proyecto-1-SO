@@ -76,7 +76,12 @@ public class Worker extends Thread{
             try {
                 
                 plant.mutex.acquire();
-                plant.warehouse.updateStorage(this.type, (int) this.productionCounter );
+                if(type.equals("ensamblador")){
+                    plant.warehouse.assembleVehicle(plant.getName());
+                } else {
+                    plant.warehouse.updateStorage(this.type, (int) this.productionCounter );
+                }
+                
                 plant.mutex.release();
                 
                 

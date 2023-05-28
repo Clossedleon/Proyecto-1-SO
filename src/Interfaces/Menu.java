@@ -891,10 +891,6 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_StopActionPerformed
 
-    private void PlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PlayActionPerformed
-
     private void SChasisBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SChasisBActionPerformed
         
         if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB, ensamB)) {
@@ -1109,6 +1105,10 @@ public class Menu extends javax.swing.JFrame {
     private void Play2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Play2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Play2ActionPerformed
+
+    private void PlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PlayActionPerformed
 
     /**
      * @param args the command line arguments
