@@ -552,10 +552,10 @@ public class Menu extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, -1, -1));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 80, 20));
 
         jLabel28.setText("Duración del día (en ms):");
-        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 150, -1));
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 150, -1));
 
         jTabbedPane1.addTab("Configuración", jPanel1);
 
@@ -655,10 +655,10 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, -1, -1));
 
         jLabel51.setText("Algo");
-        jPanel2.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 480, -1, -1));
+        jPanel2.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 480, -1, -1));
 
         jLabel52.setText("Algo");
-        jPanel2.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
+        jPanel2.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, -1));
 
         jLabel53.setText("Gerente de operaciones:");
         jPanel2.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, -1));
@@ -784,7 +784,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, -1, -1));
 
         jLabel94.setText("Algo");
-        jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, -1, -1));
+        jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, -1, -1));
 
         jLabel95.setText("0");
         jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 20, -1));
@@ -793,7 +793,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 20, -1));
 
         jLabel97.setText("Algo");
-        jPanel2.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, -1, -1));
+        jPanel2.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 480, -1, -1));
 
         jLabel98.setText("Ganancia en Bruto:");
         jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, -1, -1));
@@ -851,7 +851,7 @@ public class Menu extends javax.swing.JFrame {
                 Stop1ActionPerformed(evt);
             }
         });
-        jPanel3.add(Stop1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 90, -1));
+        jPanel3.add(Stop1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 90, -1));
 
         Play2.setText("Reanudar");
         Play2.addActionListener(new java.awt.event.ActionListener() {
@@ -859,7 +859,7 @@ public class Menu extends javax.swing.JFrame {
                 Play2ActionPerformed(evt);
             }
         });
-        jPanel3.add(Play2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 90, -1));
+        jPanel3.add(Play2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 90, -1));
 
         jLabel108.setText("Bugatti");
         jPanel3.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, -1, -1));
