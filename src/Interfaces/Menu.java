@@ -5,9 +5,11 @@
  */
 package Interfaces;
 
+import Classes.Functions;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -15,7 +17,20 @@ import javax.swing.JOptionPane;
  */
 public class Menu extends javax.swing.JFrame {
 
-    private String line = "hola";
+    private Functions func = new Functions();
+    int chasisB;
+    int carroB;
+    int motorB;
+    int ruedasB;
+    int acceB;
+    int maxB;
+    
+    int chasisM;
+    int carroM;
+    int motorM;
+    int ruedasM;
+    int acceM;
+    int maxM;
     
     
     public Menu() {
@@ -24,6 +39,21 @@ public class Menu extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setResizable(false);
+        
+        this.chasisB = Integer.parseInt(NChasisBugatti.getText());
+        this.carroB = Integer.parseInt(NCarroBugatti.getText());
+        this.motorB = Integer.parseInt(NMotorBugatti.getText());
+        this.ruedasB = Integer.parseInt(NRuedasBugatti.getText());
+        this.acceB = Integer.parseInt(NAcceBugatti.getText());
+        this.maxB = Integer.parseInt(NBugatti.getText());
+        
+        this.chasisM = Integer.parseInt(NChasisMaserati.getText());
+        this.carroM = Integer.parseInt(NCarroMaserati.getText());
+        this.motorM = Integer.parseInt(NMotorMaserati.getText());
+        this.ruedasM = Integer.parseInt(NRuedasMaserati.getText());
+        this.acceM = Integer.parseInt(NAcceMaserati.getText());
+        this.maxM = Integer.parseInt(NMaserati.getText());
+        
         
     }
 
@@ -62,7 +92,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         NBugatti = new javax.swing.JLabel();
-        NChasisBugatti1 = new javax.swing.JLabel();
+        NChasisBugatti = new javax.swing.JLabel();
         NChasisMaserati = new javax.swing.JLabel();
         NCarroMaserati = new javax.swing.JLabel();
         NMotorMaserati = new javax.swing.JLabel();
@@ -70,26 +100,26 @@ public class Menu extends javax.swing.JFrame {
         Start = new javax.swing.JButton();
         Stop = new javax.swing.JButton();
         Play = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        BAcceB = new javax.swing.JButton();
+        BAcceM = new javax.swing.JButton();
+        BChasisB = new javax.swing.JButton();
+        BCarroB = new javax.swing.JButton();
+        SCarroB = new javax.swing.JButton();
+        SMotorB = new javax.swing.JButton();
+        BMotorB = new javax.swing.JButton();
+        SRuedasB = new javax.swing.JButton();
+        BRuedasB = new javax.swing.JButton();
+        SAcceB = new javax.swing.JButton();
+        SChasisB = new javax.swing.JButton();
+        SChasisM = new javax.swing.JButton();
+        BChasisM = new javax.swing.JButton();
+        SCarroM = new javax.swing.JButton();
+        BCarroM = new javax.swing.JButton();
+        SMotorM = new javax.swing.JButton();
+        BMotorM = new javax.swing.JButton();
+        SRuedasM = new javax.swing.JButton();
+        BRuedasM = new javax.swing.JButton();
+        SAcceM = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
 
@@ -110,16 +140,16 @@ public class Menu extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
 
         jLabel5.setText("Numero de trabajadores:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 140, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 160, -1));
 
-        NAcceBugatti.setText("15");
+        NAcceBugatti.setText("0");
         jPanel1.add(NAcceBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 20, -1));
 
         jLabel7.setText("Creadores de accesorios:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 140, -1));
 
         jLabel8.setText("Numero de trabajadores:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 140, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 160, -1));
 
         jLabel9.setText("Creadores de chasis:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 140, -1));
@@ -133,19 +163,19 @@ public class Menu extends javax.swing.JFrame {
         jLabel12.setText("Creadores de ruedas:");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 140, -1));
 
-        NMaserati.setText("X");
+        NMaserati.setText("15");
         jPanel1.add(NMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 20, -1));
 
-        NAcceMaserati.setText("15");
+        NAcceMaserati.setText("0");
         jPanel1.add(NAcceMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 20, -1));
 
-        NCarroBugatti.setText("15");
+        NCarroBugatti.setText("0");
         jPanel1.add(NCarroBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 20, -1));
 
-        NMotorBugatti.setText("15");
+        NMotorBugatti.setText("0");
         jPanel1.add(NMotorBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 20, -1));
 
-        NRuedasBugatti.setText("15");
+        NRuedasBugatti.setText("0");
         jPanel1.add(NRuedasBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 20, -1));
 
         jLabel18.setText("Creadores de chasis:");
@@ -166,19 +196,19 @@ public class Menu extends javax.swing.JFrame {
         NBugatti.setText("15");
         jPanel1.add(NBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 20, -1));
 
-        NChasisBugatti1.setText("15");
-        jPanel1.add(NChasisBugatti1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 20, -1));
+        NChasisBugatti.setText("0");
+        jPanel1.add(NChasisBugatti, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 20, -1));
 
-        NChasisMaserati.setText("15");
+        NChasisMaserati.setText("0");
         jPanel1.add(NChasisMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 240, 20, -1));
 
-        NCarroMaserati.setText("15");
+        NCarroMaserati.setText("0");
         jPanel1.add(NCarroMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 20, -1));
 
-        NMotorMaserati.setText("15");
+        NMotorMaserati.setText("0");
         jPanel1.add(NMotorMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 20, -1));
 
-        NRuedasMaserati.setText("15");
+        NRuedasMaserati.setText("0");
         jPanel1.add(NRuedasMaserati, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 20, -1));
 
         Start.setText("Comenzar Simulación");
@@ -205,65 +235,165 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel1.add(Play, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, -1, -1));
 
-        jButton1.setText("jButton1");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 30, 10));
+        BAcceB.setText("jButton1");
+        BAcceB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAcceBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BAcceB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 30, 10));
 
-        jButton2.setText("jButton1");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 30, 10));
+        BAcceM.setText("jButton1");
+        BAcceM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAcceMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BAcceM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 30, 10));
 
-        jButton3.setText("jButton1");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 30, 10));
+        BChasisB.setText("jButton1");
+        BChasisB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BChasisBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BChasisB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 30, 10));
 
-        jButton4.setText("jButton1");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 30, 10));
+        BCarroB.setText("jButton1");
+        BCarroB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCarroBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BCarroB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 30, 10));
 
-        jButton5.setText("jButton1");
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 30, 10));
+        SCarroB.setText("jButton1");
+        SCarroB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SCarroBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SCarroB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 30, 10));
 
-        jButton6.setText("jButton1");
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 30, 10));
+        SMotorB.setText("jButton1");
+        SMotorB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SMotorBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SMotorB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 30, 10));
 
-        jButton7.setText("jButton1");
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 10));
+        BMotorB.setText("jButton1");
+        BMotorB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BMotorBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BMotorB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 10));
 
-        jButton8.setText("jButton1");
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 30, 10));
+        SRuedasB.setText("jButton1");
+        SRuedasB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SRuedasBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SRuedasB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 30, 10));
 
-        jButton9.setText("jButton1");
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, 30, 10));
+        BRuedasB.setText("jButton1");
+        BRuedasB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BRuedasBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BRuedasB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, 30, 10));
 
-        jButton10.setText("jButton1");
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 30, 10));
+        SAcceB.setText("jButton1");
+        SAcceB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SAcceBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SAcceB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 30, 10));
 
-        jButton11.setText("jButton1");
-        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 30, 10));
+        SChasisB.setText("jButton1");
+        SChasisB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SChasisBActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SChasisB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 30, 10));
 
-        jButton12.setText("jButton1");
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 240, 30, 10));
+        SChasisM.setText("jButton1");
+        SChasisM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SChasisMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SChasisM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 240, 30, 10));
 
-        jButton13.setText("jButton1");
-        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 250, 30, 10));
+        BChasisM.setText("jButton1");
+        BChasisM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BChasisMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BChasisM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 250, 30, 10));
 
-        jButton14.setText("jButton1");
-        jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 30, 10));
+        SCarroM.setText("jButton1");
+        SCarroM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SCarroMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SCarroM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 30, 10));
 
-        jButton15.setText("jButton1");
-        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 30, 10));
+        BCarroM.setText("jButton1");
+        BCarroM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCarroMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BCarroM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 30, 10));
 
-        jButton16.setText("jButton1");
-        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 30, 10));
+        SMotorM.setText("jButton1");
+        SMotorM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SMotorMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SMotorM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 30, 10));
 
-        jButton17.setText("jButton1");
-        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 310, 30, 10));
+        BMotorM.setText("jButton1");
+        BMotorM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BMotorMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BMotorM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 310, 30, 10));
 
-        jButton18.setText("jButton1");
-        jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, 30, 10));
+        SRuedasM.setText("jButton1");
+        SRuedasM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SRuedasMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SRuedasM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, 30, 10));
 
-        jButton19.setText("jButton1");
-        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, 30, 10));
+        BRuedasM.setText("jButton1");
+        BRuedasM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BRuedasMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BRuedasM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, 30, 10));
 
-        jButton20.setText("jButton1");
-        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 30, 10));
+        SAcceM.setText("jButton1");
+        SAcceM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SAcceMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SAcceM, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 30, 10));
 
         jTabbedPane1.addTab("Configuración", jPanel1);
 
@@ -298,6 +428,169 @@ public class Menu extends javax.swing.JFrame {
     private void PlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PlayActionPerformed
+
+    private void SChasisBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SChasisBActionPerformed
+        
+        if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB)) {
+            chasisB += 1;
+            NChasisBugatti.setText(Integer.toString(chasisB));
+        }
+        
+    }//GEN-LAST:event_SChasisBActionPerformed
+
+    private void SCarroBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SCarroBActionPerformed
+
+        if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB)) {
+            carroB += 1;
+            NCarroBugatti.setText(Integer.toString(carroB));
+        }
+    }//GEN-LAST:event_SCarroBActionPerformed
+
+    private void SMotorBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SMotorBActionPerformed
+        if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB)) {
+            motorB += 1;
+            NMotorBugatti.setText(Integer.toString(carroB));
+        }
+    }//GEN-LAST:event_SMotorBActionPerformed
+
+    private void SRuedasBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SRuedasBActionPerformed
+        if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB)) {
+            ruedasB += 1;
+            NRuedasBugatti.setText(Integer.toString(ruedasB));
+        }
+    }//GEN-LAST:event_SRuedasBActionPerformed
+
+    private void SAcceBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAcceBActionPerformed
+        if(func.checkWorkers(chasisB, carroB, motorB, ruedasB, acceB, maxB)) {
+            acceB += 1;
+            NAcceBugatti.setText(Integer.toString(acceB));
+        }
+    }//GEN-LAST:event_SAcceBActionPerformed
+
+    private void SChasisMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SChasisMActionPerformed
+        if(func.checkWorkers(chasisM, carroM, motorM, ruedasM, acceM, maxM)) {
+            chasisM += 1;
+            NChasisMaserati.setText(Integer.toString(chasisM));
+        }
+    }//GEN-LAST:event_SChasisMActionPerformed
+
+    private void SCarroMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SCarroMActionPerformed
+        if(func.checkWorkers(chasisM, carroM, motorM, ruedasM, acceM, maxM)) {
+            carroM += 1;
+            NCarroMaserati.setText(Integer.toString(carroM));
+        }
+    }//GEN-LAST:event_SCarroMActionPerformed
+
+    private void SMotorMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SMotorMActionPerformed
+        if(func.checkWorkers(chasisM, carroM, motorM, ruedasM, acceM, maxM)) {
+            motorM += 1;
+            NMotorMaserati.setText(Integer.toString(motorM));
+        }
+    }//GEN-LAST:event_SMotorMActionPerformed
+
+    private void SRuedasMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SRuedasMActionPerformed
+        if(func.checkWorkers(chasisM, carroM, motorM, ruedasM, acceM, maxM)) {
+            ruedasM += 1;
+            NRuedasMaserati.setText(Integer.toString(ruedasM));
+        }
+    }//GEN-LAST:event_SRuedasMActionPerformed
+
+    private void SAcceMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAcceMActionPerformed
+        if(func.checkWorkers(chasisM, carroM, motorM, ruedasM, acceM, maxM)) {
+            acceM += 1;
+            NAcceMaserati.setText(Integer.toString(acceM));
+        }
+    }//GEN-LAST:event_SAcceMActionPerformed
+
+    private void BChasisBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BChasisBActionPerformed
+        if (chasisB == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            chasisB -= 1;
+            NChasisBugatti.setText(Integer.toString(chasisB));
+        }
+    }//GEN-LAST:event_BChasisBActionPerformed
+
+    private void BCarroBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCarroBActionPerformed
+        if (carroB == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            carroB -= 1;
+            NCarroBugatti.setText(Integer.toString(carroB));
+        }
+    }//GEN-LAST:event_BCarroBActionPerformed
+
+    private void BMotorBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BMotorBActionPerformed
+        if (motorB == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            motorB -= 1;
+            NMotorBugatti.setText(Integer.toString(motorB));
+        }
+    }//GEN-LAST:event_BMotorBActionPerformed
+
+    private void BRuedasBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRuedasBActionPerformed
+        if (ruedasB == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            ruedasB -= 1;
+            NRuedasBugatti.setText(Integer.toString(ruedasB));
+        }
+    }//GEN-LAST:event_BRuedasBActionPerformed
+
+    private void BAcceBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAcceBActionPerformed
+        if (acceB == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            acceB -= 1;
+            NAcceBugatti.setText(Integer.toString(acceB));
+        }
+    }//GEN-LAST:event_BAcceBActionPerformed
+
+    private void BChasisMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BChasisMActionPerformed
+        if (chasisM == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            chasisM -= 1;
+            NChasisMaserati.setText(Integer.toString(chasisM));
+        }
+    }//GEN-LAST:event_BChasisMActionPerformed
+
+    private void BCarroMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCarroMActionPerformed
+        if (carroM == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            carroM -= 1;
+            NCarroMaserati.setText(Integer.toString(carroM));
+        }
+    }//GEN-LAST:event_BCarroMActionPerformed
+
+    private void BMotorMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BMotorMActionPerformed
+        if (motorM == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            motorM -= 1;
+            NMotorMaserati.setText(Integer.toString(motorM));
+        }
+    }//GEN-LAST:event_BMotorMActionPerformed
+
+    private void BRuedasMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRuedasMActionPerformed
+        if (ruedasM == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            ruedasM -= 1;
+            NRuedasMaserati.setText(Integer.toString(ruedasM));
+        }
+    }//GEN-LAST:event_BRuedasMActionPerformed
+
+    private void BAcceMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAcceMActionPerformed
+        if (acceM == 0) {
+            JOptionPane.showMessageDialog(null, "no pueden haber menos de 0 trabajadores en un área");
+        } else {
+            acceM -= 1;
+            NAcceMaserati.setText(Integer.toString(acceM));
+        }
+    }//GEN-LAST:event_BAcceMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -335,12 +628,22 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BAcceB;
+    private javax.swing.JButton BAcceM;
+    private javax.swing.JButton BCarroB;
+    private javax.swing.JButton BCarroM;
+    private javax.swing.JButton BChasisB;
+    private javax.swing.JButton BChasisM;
+    private javax.swing.JButton BMotorB;
+    private javax.swing.JButton BMotorM;
+    private javax.swing.JButton BRuedasB;
+    private javax.swing.JButton BRuedasM;
     private javax.swing.JLabel NAcceBugatti;
     private javax.swing.JLabel NAcceMaserati;
     private javax.swing.JLabel NBugatti;
     private javax.swing.JLabel NCarroBugatti;
     private javax.swing.JLabel NCarroMaserati;
-    private javax.swing.JLabel NChasisBugatti1;
+    private javax.swing.JLabel NChasisBugatti;
     private javax.swing.JLabel NChasisMaserati;
     private javax.swing.JLabel NMaserati;
     private javax.swing.JLabel NMotorBugatti;
@@ -348,28 +651,18 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel NRuedasBugatti;
     private javax.swing.JLabel NRuedasMaserati;
     private javax.swing.JButton Play;
+    private javax.swing.JButton SAcceB;
+    private javax.swing.JButton SAcceM;
+    private javax.swing.JButton SCarroB;
+    private javax.swing.JButton SCarroM;
+    private javax.swing.JButton SChasisB;
+    private javax.swing.JButton SChasisM;
+    private javax.swing.JButton SMotorB;
+    private javax.swing.JButton SMotorM;
+    private javax.swing.JButton SRuedasB;
+    private javax.swing.JButton SRuedasM;
     private javax.swing.JButton Start;
     private javax.swing.JButton Stop;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
